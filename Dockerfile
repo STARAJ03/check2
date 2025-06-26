@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 # Install necessary dependencies
-RUN apk add --no-cache \
+RUN apt-get --no-cache \
     gcc \
     libffi-dev \
     musl-dev \
